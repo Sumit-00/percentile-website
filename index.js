@@ -1,17 +1,3 @@
-// $(".carousel .carousel-inner").swipe({
-//   swipeLeft: function (event, direction, distance, duration, fingerCount) {
-//     this.parent().carousel("next");
-//   },
-//   swipeRight: function () {
-//     this.parent().carousel("prev");
-//   },
-//   threshold: 0,
-//   tap: function (event, target) {
-//     window.location = $(this).find(".carousel-item.active a").attr("href");
-//   },
-//   excludedElements: "label, button, input, select, textarea, .noSwipe",
-// });
-
 const counters = document.querySelectorAll(".counter");
 counters.forEach((counter) => {
   counter.innerHTML = 0;
@@ -27,7 +13,7 @@ counters.forEach((counter) => {
       if (startingCount < targetCount) {
         counter.innerHTML = startingCount + incr;
 
-        setTimeout(updateCounter, 40);
+        setTimeout(updateCounter, 250);
       } else {
         counter.innerHTML = targetCount;
       }
@@ -39,7 +25,7 @@ counters.forEach((counter) => {
       if (startingCount < targetCount) {
         counter.innerHTML = `${Math.round(startingCount + incr)}`;
 
-        setTimeout(updateCounter, 40);
+        setTimeout(updateCounter, 150);
       } else {
         counter.innerHTML = targetCount;
       }
@@ -64,4 +50,69 @@ playButton.addEventListener("click", function () {
     // Update the button text to 'Play'
     playButton.innerHTML = "Play";
   }
+});
+
+var $carousel = $(".slider");
+
+var settings = {
+  dots: false,
+  arrows: false,
+  slide: ".slick-slideshow__slide",
+  slidesToShow: 1,
+  centerMode: true,
+  centerPadding: "60px",
+  infinite: false,
+};
+
+function setSlideVisibility() {
+  //Find the visible slides i.e. where aria-hidden="false"
+  // var visibleSlides = $carousel.find(
+  //   '.slick-slideshow__slide[aria-hidden="false"]'
+  // );
+  //Make sure all of the visible slides have an opacity of 1
+  // $(visibleSlides).each(function () {
+  //   $(this).css("opacity", 1);
+  // });
+  //Set the opacity of the first and last partial slides.
+  // $(visibleSlides).first().prev().css("opacity", 0);
+}
+
+$carousel.slick(settings);
+$carousel.slick("slickGoTo", 1);
+setSlideVisibility();
+
+$carousel.on("afterChange", function () {
+  setSlideVisibility();
+});
+
+$(".slider").on("afterChange", function (event, slick, currentSlide) {
+  const customSlide = document.querySelectorAll(".slick-slideshow__slide");
+
+  console.log(currentSlide);
+
+  // for (let i = 0; i < customSlide.length; i++) {
+  //   const ele = document.getElementsByClassName(customSlide[i].classList[0])[0];
+  //   ele.style.backgroundColor = "white";
+  //   ele.style.color = "#034446";
+  // }
+  // let idx;
+  // if (currentSlide == 1) {
+  //   idx = 20;
+  // } else if (currentSlide == 2) {
+  //   idx = 21;
+  // } else if (currentSlide == 3) {
+  //   idx = 22;
+  // } else if (currentSlide == 4) {
+  //   idx = 23;
+  // }
+  // const currCustomSlide = customSlide[currentSlide].classList;
+  // const currentClass = currCustomSlide[0];
+  // const ele1 =
+  //   document.getElementsByClassName(currentClass)[0].children[0].classList[0];
+  // console.log(document.getElementsByClassName(ele1)[idx].children[1]);
+
+  // document.getElementsByClassName(ele1)[idx].children[1].style.backgroundColor =
+  //   "#F1612C";
+  // document.getElementsByClassName(ele1)[idx].children[1].style.color =
+  //   "#F5D77F";
 });

@@ -1,821 +1,1147 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percentile</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Percentile</title>
-   
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+     
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    
+    
     <link rel="stylesheet" href="style.css" />
-</head>
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1537px)"
+      href="bigScreen.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1250px)"
+      href="laptop.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 769px)"
+      href="tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 601px)"
+      href="mobile.css"
+    />
 
-<body>
-  <!-- ---- NavBar---- -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: rgba(14, 10, 10, 0.8) !important">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="images/logo.svg" alt="Logo" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <div class="items">
-            <li class="nav-item">
-              <a style="color: #fff" class="nav-link" aria-current="page" href="#">Blogs</a>
-            </li>
-            <li class="nav-item">
-              <a style="color: #fff" class="nav-link" href="#">Demo Videos</a>
-            </li>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-            <li class="nav-item dropdown">
-              <a style="color: #fff" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Courses
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+  <body>
+    <!-- ---- NavBar---- -->
+    <div class="container-fluid nav-container">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light"
+        style="background: rgba(14, 10, 10, 0.8) !important"
+      >
+        <div class="container nav-grid">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.svg" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <div class="items">
+                <li class="nav-item">
+                  <a
+                    style="color: #fff"
+                    class="nav-link"
+                    aria-current="page"
+                    href="#"
+                    >Blogs</a
+                  >
                 </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a style="color: #fff" class="nav-link" href="#">Mock Test</a>
-            </li>
+                <li class="nav-item">
+                  <a style="color: #fff" class="nav-link" href="#"
+                    >Demo Videos</a
+                  >
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    style="color: #fff"
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Courses
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a style="color: #fff" class="nav-link" href="#">Mock Test</a>
+                </li>
+              </div>
+              <div class="buttons">
+                <button type="button" class="btn btn-primary btn1">
+                  Sign In
+                </button>
+                <button type="button" class="btn btn-primary btn2">
+                  Sign Up
+                </button>
+              </div>
+            </ul>
           </div>
-          <div class="buttons">
-            <button type="button" class="btn btn-primary btn1">
-              Sign In
-            </button>
-            <button type="button" class="btn btn-primary btn2">
-              Sign Up
-            </button>
+        </div>
+      </nav>
+    </div>
+    <!-- ---- End of Navbar---- -->
+    <!-- ---- Banner ----- -->
+
+    <div class="container-fluid container1">
+      <div class="container banner">
+        <div class="row" style="margin-right: 0 !important">
+          <div class="col-lg-6 info col-sm-6 col-md-6">
+            <p style="color: #f5d77f">Create your success story with</p>
+            <h1>The Best Online CAT Coaching</h1>
+            <p style="color: #f5d77f; font-weight: 700">
+              Prepare . Persevere . Perform
+            </p>
+            <p style="color: white">
+              Result oriented Courses . Interactive Live Classes. AI- Based Live
+              <br />
+              Classes
+            </p>
+            <button>Start Your Free Trail Now</button>
           </div>
-        </ul>
+          <div class="col-lg-6 col-sm-6 image1 col-md-6">
+            <img src="images/image1.png" alt="Image1" />
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-  <!-- ---- End of Navbar---- -->
-  <!-- ---- Banner ----- -->
 
-  <div class="container-fluid container1">
+    <!-- ---- End of Banner---- -->
+
+    <!------- Count------- -->
+    <div
+      class="container count-container"
+      style="margin-top: 7rem; margin-bottom: 7rem"
+    >
+      <div class="count-heading">
+        <h1>Our Achievements</h1>
+        <p>with our CAT Online Courses</p>
+      </div>
+      <div class="count_main_container">
+        <div class="counter-container">
+          <div class="counter counter1" data-target="1.5">0</div>
+          <span
+            class="letter"
+            style="
+              font-weight: 700;
+              line-height: 5.6rem;
+              color: #f1612ccc;
+              display: inline-block;
+            "
+            >K</span
+          >
+          <span>IIM</span>
+          <p>Converts</p>
+        </div>
+        <div class="counter-container">
+          <div class="counter" data-target="157">0</div>
+          <span>Scored</span>
+          <p>99+ Percentile</p>
+        </div>
+        <div class="counter-container">
+          <div class="counter" data-target="286">0</div>
+          <span>Scored</span>
+          <p>97+ Percentile</p>
+        </div>
+        <div class="counter-container">
+          <div class="counter" data-target="397">0</div>
+          <span>Scored</span>
+          <p>95+ Percentile</p>
+        </div>
+        <div class="counter-container">
+          <div class="counter" data-target="127">0</div>
+          <span>Students</span>
+          <p>in Elite B School</p>
+        </div>
+      </div>
+      <div class="combine-counter">
+        <div class="counter-container">
+          <div class="counter" data-target="397">0</div>
+          <span>Scored</span>
+          <p>95+ Percentile</p>
+        </div>
+        <div class="counter-container">
+          <div class="counter" data-target="127">0</div>
+          <span>Students</span>
+          <p>in Elite B School</p>
+        </div>
+      </div>
+    </div>
+    <!-- ---- End of Count----- -->
+    <!-- ------------ Decidated Section ------------- -->
     <div class="container">
-      <div class="row" style="margin-right: 0 !important">
-        <div class="col-lg-6 info col-sm-12 col-md-6">
-          <p style="color: #f5d77f">Create your success story with</p>
-          <h1 style="
-                color: white;
-                font-weight: 700;
-                font-size: 3.25rem;
-                line-height: 4.87rem;
-              ">
-            The Best Online <br />
-            CAT Coaching
-          </h1>
-          <p style="color: #f5d77f; font-weight: 700">
-            Prepare . Persevere . Perform
+      <div class="dedicated-heading">
+        <p class="para1">Best Services</p>
+        <h1>Dedicated to make you Crack CAT Exam</h1>
+        <p>
+          With percentilers, you are one Step closer to your dream
+          <strong>B-School</strong>.
+        </p>
+      </div>
+    </div>
+    <!-- ------------ End of Decidated Section ------------- -->
+
+    <!-- ------- Video---------- -->
+    <div class="container video">
+      <iframe id="video" src="https://www.youtube.com/embed?v=nIv26cE7lkM">
+      </iframe>
+      <button id="play_button">
+        <img src="images/play-button.png" alt="playButton" />
+      </button>
+    </div>
+    <!-- ------- End of Video---------- -->
+
+    <!-- ---- Qualities---- -->
+    <div class="container" style="margin-top: 3rem; margin-bottom: 3rem">
+      <div class="row quality">
+        <div class="col-lg-4 q1">
+          <div class="icon">
+            <img src="images/icon1.png" alt="icon1" />
+          </div>
+          <div class="text">
+            <h4>Learn from the best</h4>
+            <p>
+              It's very easy to join us with just an email and a strong desire
+              that makes you consistent
+            </p>
+          </div>
+          <span>
+            <div class="line"></div>
+          </span>
+        </div>
+        <div class="col-lg-4 q1">
+          <div class="icon">
+            <img src="images/icon2.png" alt="icon2" />
+          </div>
+          <div class="text">
+            <h4>Excellent Education</h4>
+            <p>
+              The quality of the lessons are very good and of international
+              standard so that you will get maximum
+            </p>
+          </div>
+          <span>
+            <div class="line"></div>
+          </span>
+        </div>
+        <div class="col-lg-4 q1">
+          <div class="icon">
+            <img src="images/icon3.png" alt="icon3" />
+          </div>
+          <div class="text">
+            <h4>Affordable prices</h4>
+            <p>
+              Affordable prices and friendly to your unemployed pocket makes
+              this even more fitting
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---- End of Qualities---- -->
+    <!-- ------- Social media----- -->
+    <div class="socialMedia">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12 social1">
+              <h3>Any queries on CAT Online Coaching for CAT 2021</h3>
+            </div>
+            <div class="col-lg-6 col-sm-12 social">
+              <div class="whatsapp">
+                <span><img src="images/whatsapp.png" alt="whatsapp" /></span>
+                <a
+                  style="
+                    text-decoration: none;
+                    color: #121212;
+                    font-weight: 600;
+                  "
+                  href=""
+                >
+                  <h3>Whatsapp</h3>
+                </a>
+              </div>
+              <div class="telegram">
+                <span><img src="images/telegram.png" alt="telegram" /></span>
+                <a
+                  style="
+                    text-decoration: none;
+                    color: #121212;
+                    font-weight: 600;
+                  "
+                  href=""
+                >
+                  <h3>Join Telegram Group</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------- End of Social Media ----------- -->
+    <!-- ------------- Cards 1 ------------ -->
+    <div
+      class="container firstCard"
+      style="margin-top: 3rem; margin-bottom: 3rem"
+    >
+      <div class="first">
+        <h1>What does Percentilers offers in CAT online Preperation</h1>
+        <p>
+          Sample up to 10% of the product for free, but you may not like it and
+          may not buy it.
+        </p>
+        <img src="images/Mask Group.png" alt="maskGroup" />
+      </div>
+      <div class="second">
+        <div class="card card1">
+          <div class="card-body">
+            <div class="card-image">
+              <img src="images/interactive1.png" alt="interactive1" />
+            </div>
+            <h5 class="card-title card-title1">Interactive Online Classes</h5>
+            <p class="card-text card-text1">
+              For robust CAT online preparation, you can unmute yourself during
+              the live classes and ask your doubts quickly to the educator.
+            </p>
+          </div>
+        </div>
+
+        <div class="card card1">
+          <div class="card-body">
+            <div class="card-image">
+              <img src="images/gamepad1.png" alt="gamepad" />
+            </div>
+            <h5 class="card-title card-title1">Online Gamified Courses</h5>
+            <p class="card-text card-text1">
+              To help you prepare for CAT in the most efficient and easier
+              manner, we enforce a gamified learning approach in our content.
+            </p>
+          </div>
+        </div>
+        <div class="card card1">
+          <div class="card-body">
+            <div class="card-image">
+              <img src="images/question1.png" alt="question" />
+            </div>
+            <h5 class="card-title card-title1">
+              Live Doubt Clearning Sessions
+            </h5>
+            <p class="card-text card-text1">
+              Get all your doubts and questions cleared with our dedicated
+              doubt-clearing sessions every week as part of the online course.
+            </p>
+          </div>
+        </div>
+        <div class="card card1">
+          <div class="card-body">
+            <div class="card-image">
+              <img src="images/job-interview.png" alt="interview" />
+            </div>
+            <h5 class="card-title card-title1">Personalized CAT Preparation</h5>
+            <p class="card-text card-text1">
+              We offer a personalized learning experience with our online CAT
+              program to work on the weaknesses & strengths of each student.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------- -->
+    <div
+      class="container firstCard"
+      style="margin-top: 3rem; margin-bottom: 3rem"
+    >
+      <div class="first">
+        <h1>What does Percentilers offers in CAT online Preperation</h1>
+        <p>
+          Sample up to 10% of the product for free, but you may not like it and
+          may not buy it.
+        </p>
+        <img src="images/Mask Group.png" alt="maskGroup" />
+      </div>
+
+      <div class="second">
+        <div class="card card1 card-test">
+          <div class="card-body card-inner">
+            <div class="card-front">
+              <div class="flip-img">
+                <img src="images/interactive1.png" alt="interactive1" />
+              </div>
+              
+              <h5 class="card-title card-title1">Interactive Online Classes
+            </div>
+            <div class="card-back">
+              </h5>
+              <p class="card-text card-text1">
+                For robust CAT online preparation, you can unmute yourself
+                during the live classes and ask your doubts quickly to the
+                educator.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card card1 card-test">
+          <div class="card-body card-inner">
+            <div class="card-front">
+              <div class="flip-img">
+                <img src="images/gamepad1.png" alt="gamepad" />
+              </div>
+              
+              <h5 class="card-title card-title1">Online Gamified Courses
+            </div>
+            <div class="card-back">
+              </h5>
+              <p class="card-text card-text1">
+                To help you prepare for CAT in the most efficient and easier manner, we enforce a gamified learning approach in our content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card card1 card-test">
+          <div class="card-body card-inner">
+            <div class="card-front">
+              <div class="flip-img">
+                <img src="images/question1.png" alt="question" />
+              </div>
+              
+              <h5 class="card-title card-title1">Live Doubt Clearning Sessions
+            </div>
+            <div class="card-back">
+              </h5>
+              <p class="card-text card-text1">
+                Get all your doubts and questions cleared with our dedicated doubt-clearing sessions every week as part of the online course.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card card1 card-test">
+          <div class="card-body card-inner">
+            <div class="card-front">
+              <div class="flip-img">
+                <img src="images/job-interview.png" alt="interview" />
+              </div>
+              
+              <h5 class="card-title card-title1">Personalized CAT Preparation
+            </div>
+            <div class="card-back">
+              </h5>
+              <p class="card-text card-text1">
+                We offer a personalized learning experience with our online CAT program to work on the weaknesses & strengths of each student.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        
+        
+        
+      </div>
+    </div>
+    <!-- ------------- End of Cards 1 ------------ -->
+
+    <!-------- Card 2---------------->
+
+    <div class="container">
+      <div class="card2-heading">
+        <h3>TESTIMONIALS</h3>
+        <h1>What students are saying about our CAT online course</h1>
+      </div>
+      <div class="secondCard">
+        <div class="inside-card">
+          <div
+            class="card card2"
+            style="box-shadow: 10px 24px 54px rgb(0 0 0 / 15%)"
+          >
+            <div class="card-body">
+              <p class="card-text card-text2">
+                I started my CAT preparation in May. After searching for more
+                than two weeks, I ended up enrolling in Percentilers, and this
+                was the best decision of my life so far. Amazing Pedagogy of
+                both Pranshul Sir and Mayank Sir. Taking online classes seems
+                like a video call with a friend yet too informative. Would
+                surely recommend it without any doubt.
+              </p>
+              <div class="secondCard-info">
+                <img src="images/img1.png" alt="image1" />
+                <div class="images-info">
+                  <h5>Akansha Gangwar</h5>
+                  <p style="font-weight: 700">JBMIS Mumbai</p>
+                  <p>98.06%iler CAT 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card card2"
+            style="box-shadow: 10px 24px 54px rgb(0 0 0 / 15%)"
+          >
+            <div class="card-body">
+              <p class="card-text card-text2">
+                This was my third attempt when I enrolled in Percentilers. Sir
+                made me realize all I need was constant motivation and
+                self-belief. They are more than just mentors, They are life
+                coaches in true sense. One-One doubt sessions with the coaching
+                class helped me gain confidence and fill up those loopholes.
+              </p>
+              <div class="secondCard-info">
+                <img src="images/img2.png" alt="image2" />
+                <div class="images-info">
+                  <h5>Aditya Thawait</h5>
+                  <p style="font-weight: 700">FMS Delhi</p>
+                  <p>98.06%iler CAT 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card card2"
+            style="box-shadow: 10px 24px 54px rgb(0 0 0 / 15%)"
+          >
+            <div class="card-body">
+              <p class="card-text card-text2">
+                This is the place to be. It is not a regular institute, you will
+                get a sneak peek of what life is during MBA. Now in my 1st year
+                of XLRI and yes everything they said will happen is happening.
+                Apart from Intensive CAT online classes and regular tests. They
+                give you the vision to live for.
+              </p>
+              <div class="secondCard-info">
+                <img src="images/img3.png" alt="image3" />
+                <div class="images-info">
+                  <h5>Nikita Jain</h5>
+                  <p style="font-weight: 700">XLRI Jamshedpur</p>
+                  <p>98.06%iler CAT 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card card2"
+            style="box-shadow: 10px 24px 54px rgb(0 0 0 / 15%)"
+          >
+            <div class="card-body">
+              <p class="card-text card-text2">
+                Best in Class! I am glad I came across Percentilers, Pranshul
+                sir is one of the finest faculty across the nation for CAT
+                preparation. His hold and command over the subject will make you
+                go wow. More than a faculty he is a go to person. You can
+                discuss any problem and yes, he will always be there to help you
+                out.
+              </p>
+              <div class="secondCard-info">
+                <img src="images/img4.png" alt="image4" />
+                <div class="images-info">
+                  <h5>Hardik Dhawan</h5>
+                  <p style="font-weight: 700">IIM Bengaluru</p>
+                  <p>98.06%iler CAT 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card card2"
+            style="box-shadow: 10px 24px 54px rgb(0 0 0 / 15%)"
+          >
+            <div class="card-body">
+              <p class="card-text card-text2">
+                It was a roller coaster ride. I was the person who was scolded
+                by them. I was the person who has been appreciated. The only
+                thing Sir didn’t do was leave my side. He was there to motivate
+                me, when I was on the verge of giving up. He was the one who did
+                hours of Ted Talks just to make sure everyone is on the same
+                line. One of the finest online CAT coaching platforms.
+              </p>
+              <div class="secondCard-info">
+                <img src="images/img5.png" alt="image5" />
+                <div class="images-info">
+                  <h5>Shristhi Raj</h5>
+                  <p style="font-weight: 700">IIM Calcutta</p>
+                  <p>98.06%iler CAT 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card card2"
+            style="box-shadow: 10px 24px 54px rgb(0 0 0 / 15%)"
+          >
+            <div class="card-body">
+              <p class="card-text card-text2">
+                Best online coaching for MBA entrance. The faculty is very
+                supportive and clear all doubts in the best possible manner. I
+                will always give my success credit to Percentilers.
+              </p>
+              <div class="secondCard-info">
+                <img src="images/img6.png" alt="image6" />
+                <div class="images-info">
+                  <h5>Aditya Rao</h5>
+                  <p style="font-weight: 700">SP JAIN Mumbai</p>
+                  <p>98.06%iler CAT 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ----------- carousel ----------------------  -->
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-current="true"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card card2" style="width: 396px">
+                <div class="card-body">
+                  <p class="card-text card-text2">
+                    I started my CAT preparation in May. After searching for
+                    more than two weeks, I ended up enrolling in Percentilers,
+                    and this was the best decision of my life so far. Amazing
+                    Pedagogy of both Pranshul Sir and Mayank Sir. Taking online
+                    classes seems like a video call with a friend yet too
+                    informative. Would surely recommend it without any doubt.
+                  </p>
+                  <div class="secondCard-info">
+                    <img src="images/img1.png" alt="image1" />
+                    <div class="images-info">
+                      <h5>Akansha Gangwar</h5>
+                      <p style="font-weight: 700">JBMIS Mumbai</p>
+                      <p>98.06%iler CAT 2020</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card card2" style="width: 300px">
+                <div class="card-body">
+                  <p class="card-text card-text2">
+                    This was my third attempt when I enrolled in Percentilers.
+                    Sir made me realize all I need was constant motivation and
+                    self-belief. They are more than just mentors, They are life
+                    coaches in true sense. One-One doubt sessions with the
+                    coaching class helped me gain confidence and fill up those
+                    loopholes.
+                  </p>
+                  <div class="secondCard-info">
+                    <img src="images/img2.png" alt="image2" />
+                    <div class="images-info">
+                      <h5>Aditya Thawait</h5>
+                      <p style="font-weight: 700">FMS Delhi</p>
+                      <p>98.06%iler CAT 2020</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card card2" style="width: 396px">
+                <div class="card-body">
+                  <p class="card-text card-text2">
+                    This is the place to be. It is not a regular institute, you
+                    will get a sneak peek of what life is during MBA. Now in my
+                    1st year of XLRI and yes everything they said will happen is
+                    happening. Apart from Intensive CAT online classes and
+                    regular tests. They give you the vision to live for.
+                  </p>
+                  <div class="secondCard-info">
+                    <img src="images/img3.png" alt="image3" />
+                    <div class="images-info">
+                      <h5>Nikita Jain</h5>
+                      <p style="font-weight: 700">XLRI Jamshedpur</p>
+                      <p>98.06%iler CAT 2020</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card card2" style="width: 396px">
+                <div class="card-body">
+                  <p class="card-text card-text2">
+                    Best in Class! I am glad I came across Percentilers,
+                    Pranshul sir is one of the finest faculty across the nation
+                    for CAT preparation. His hold and command over the subject
+                    will make you go wow. More than a faculty he is a go to
+                    person. You can discuss any problem and yes, he will always
+                    be there to help you out.
+                  </p>
+                  <div class="secondCard-info">
+                    <img src="images/img4.png" alt="image4" />
+                    <div class="images-info">
+                      <h5>Hardik Dhawan</h5>
+                      <p style="font-weight: 700">IIM Bengaluru</p>
+                      <p>98.06%iler CAT 2020</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card card2" style="width: 396px">
+                <div class="card-body">
+                  <p class="card-text card-text2">
+                    It was a roller coaster ride. I was the person who was
+                    scolded by them. I was the person who has been appreciated.
+                    The only thing Sir didn’t do was leave my side. He was there
+                    to motivate me, when I was on the verge of giving up. He was
+                    the one who did hours of Ted Talks just to make sure
+                    everyone is on the same line. One of the finest online CAT
+                    coaching platforms.
+                  </p>
+                  <div class="secondCard-info">
+                    <img src="images/img5.png" alt="image5" />
+                    <div class="images-info">
+                      <h5>Shristhi Raj</h5>
+                      <p style="font-weight: 700">IIM Calcutta</p>
+                      <p>98.06%iler CAT 2020</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card card2" style="width: 396px">
+                <div class="card-body">
+                  <p class="card-text card-text2">
+                    Best online coaching for MBA entrance. The faculty is very
+                    supportive and clear all doubts in the best possible manner.
+                    I will always give my success credit to Percentilers.
+                  </p>
+                  <div class="secondCard-info">
+                    <img src="images/img6.png" alt="image6" />
+                    <div class="images-info">
+                      <h5>Aditya Rao</h5>
+                      <p style="font-weight: 700">SP JAIN Mumbai</p>
+                      <p>98.06%iler CAT 2020</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ----------- End of carousel ---------------------- -->
+        </div>
+      </div>
+    </div>
+    <!-------- End of  Card 2---------------->
+    <!-- ------------- Prices ---------------- -->
+    <div class="container price">
+      <div class="price-heading">
+        <p>Best package</p>
+        <h1>Percentilers CAT Online Courses</h1>
+        <p>
+          The classes that are so much in demand by students are below that we
+          have selected
+        </p>
+        <button>All Course</button>
+      </div>
+      <div class="price-card">
+        <!-- ----- Card 1 ----- -->
+        <div class="card" style="width: 23%">
+          <img src="images/price-card.png" class="card-img-top" alt="price" />
+          <div class="card-body">
+            <h5 class="card-title">CAT Comprehensive 2021</h5>
+            <div class="price-info">
+              <p>5 Courses</p>
+              <h2>₹ 18,499</h2>
+            </div>
+          </div>
+        </div>
+        <!-- ------  Card 2--------- -->
+        <div class="card" style="width: 23%">
+          <img src="images/price-card.png" class="card-img-top" alt="price" />
+          <div class="card-body">
+            <h5 class="card-title">CAT Comprehensive 2021</h5>
+            <div class="price-info">
+              <p>5 Courses</p>
+              <h2>₹ 18,499</h2>
+            </div>
+          </div>
+        </div>
+        <!-- ----- card 3------------ -->
+        <div class="card" style="width: 23%">
+          <img src="images/price-card.png" class="card-img-top" alt="price" />
+          <div class="card-body">
+            <h5 class="card-title">CAT Comprehensive 2021</h5>
+            <div class="price-info">
+              <p>5 Courses</p>
+              <h2>₹ 18,499</h2>
+            </div>
+          </div>
+        </div>
+        <!-- -------- card 4 ------------ -->
+        <div class="card" style="width: 23%">
+          <img src="images/price-card.png" class="card-img-top" alt="price" />
+          <div class="card-body">
+            <h5 class="card-title">CAT Comprehensive 2021</h5>
+            <div class="price-info">
+              <p>5 Courses</p>
+              <h2>₹ 18,499</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------- Mobile Price card -------------- -->
+
+      <div class="slider">
+        <div
+          class="firstSlide slick-slideshow__slide"
+          style="margin-right: 21px"
+        >
+          <div class="card" style="width: 16rem">
+            <img src="images/price-card.png" class="card-img-top" alt="price" />
+            <div class="card-body">
+              <h5 class="card-title">CAT Comprehensive 2021 first</h5>
+              <div class="price-info">
+                <p>5 Courses</p>
+                <h2>₹ 18,499</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="secondSlide slick-slideshow__slide"
+          style="margin-right: 21px"
+        >
+          <div class="card" style="width: 16rem">
+            <img src="images/price-card.png" class="card-img-top" alt="price" />
+            <div class="card-body">
+              <h5 class="card-title">CAT Comprehensive 2021 second</h5>
+              <div class="price-info">
+                <p>5 Courses</p>
+                <h2>₹ 18,499</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="thirdSlide slick-slideshow__slide"
+          style="margin-right: 21px"
+        >
+          <div class="card" style="width: 16rem">
+            <img src="images/price-card.png" class="card-img-top" alt="price" />
+            <div class="card-body">
+              <h5 class="card-title">CAT Comprehensive 2021 third</h5>
+              <div class="price-info">
+                <p>5 Courses</p>
+                <h2>₹ 18,499</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="fourthSlide slick-slideshow__slide"
+          style="margin-right: 21px"
+        >
+          <div class="card" style="width: 16rem">
+            <img src="images/price-card.png" class="card-img-top" alt="price" />
+            <div class="card-body">
+              <h5 class="card-title">CAT Comprehensive 2021 fourth</h5>
+              <div class="price-info">
+                <p>5 Courses</p>
+                <h2>₹ 18,499</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- Mobile Price card end -------------- -->
+    </div>
+    <!-- ------------- End of Prices ---------------- -->
+    <!-- ---------- About --------------- -->
+    <div class="container">
+      <div class="about-container">
+        <img src="images/About_image.png" alt="about1" />
+        <div class="about-info">
+          <p
+            style="
+              color: #30b6d1;
+              letter-spacing: 1px;
+              line-height: 24px;
+              text-transform: uppercase;
+            "
+          >
+            about Percentilers
           </p>
-          <p style="color: white">
-            Result oriented Courses . Interactive Live Classes. AI- Based Live
-            <br />
-            Classes
+          <h1>Percentilers Offers the Best Online CAT Preparation.</h1>
+          <p class="para2">
+            Personalised Preparation with dedicated Buddy Mentor, To equip you
+            with all the necessary tools to Crack CAT
           </p>
+          <ul>
+            <li>
+              Weekly Tests with A.I. Based analytics and Personalised
+              Suggestions.
+            </li>
+            <li>Most Comprehensive Gamified Course for CAT</li>
+            <li>
+              Humongous interactive Sessions with Faculties, IIM Alumnis and
+              Industry experts.
+            </li>
+            <li>One-One Live Doubt Sessions Every weekend.</li>
+            <li>Focused on Logics rather than cramming Formulas</li>
+          </ul>
           <button>Start Your Free Trail Now</button>
         </div>
-        <div class="col-lg-6 col-sm-12 image1 col-md-6">
-          <img src="images/image1.png" alt="Image1" />
+      </div>
+      <div class="about-container-1">
+        <div class="image-and-info">
+          <img src="images/image2.jpeg" alt="about2" />
+        <div class="about-info-1">
+          <p class="para4">Idea and Vision</p>
+          <h1>Idea behind Percentilers Best Online CAT Coaching</h1>
+          <p class="para3">
+            The Driving Idea behind Percentilers CAT Classes is to Provide the
+            Best Student Centered Learning Experience, wherein We take the
+            Guarentee of the services and are answerable to any shortcomings of
+            the Student, reinforcing the idea and attitude and personality
+            required not to crack only Competitive Exams like CAT but be a
+            better version of self as a whole. Unlike other institutes,
+            percentilers comes without a glass sheild between the faculty and
+            students, helping them overcome any kind of troughs in their
+            preparation journey. The focal point will be counseling wheather on
+            personal or Preparational level.
+          </p>
+          <h2 class="name">- Pranshul</h2>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- ---------- ENd of About --------------- -->
+    <!-- ----------------- Steps ------------------ -->
+    <div class="container steps">
+      <h1>Get your 5 Stepguide to crack CAT</h1>
+      <div class="forms">
+        <form style="position: relative">
+          <input type="tel" placeholder="Enter your Mobile no." />
+          <input type="email" placeholder="Enter your email address" />
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+    </div>
+    <!-- ------- Social media----- -->
+    <div class="socialMedia">
+      <div class="container-fluid social-media-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12 social1">
+              <h3>Any queries on CAT Online Coaching for CAT 2021</h3>
+            </div>
+            <div class="col-lg-6 col-sm-12 social">
+              <div class="whatsapp">
+                <span><img src="images/whatsapp.png" alt="whatsapp" /></span>
+                <a
+                  style="
+                    text-decoration: none;
+                    color: #121212;
+                    font-weight: 600;
+                  "
+                  href=""
+                >
+                  <h3>Whatsapp</h3>
+                </a>
+              </div>
+              <div class="telegram">
+                <span><img src="images/telegram.png" alt="telegram" /></span>
+                <a
+                  style="
+                    text-decoration: none;
+                    color: #121212;
+                    font-weight: 600;
+                  "
+                  href=""
+                >
+                  <h3>Join Telegram Group</h3>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    <!-- -------- End of Social Media ----------- -->
+    <!-- ----------------- ENd of Steps ------------------ -->
 
-  <!-- ---- End of Banner---- -->
-
-  <!------- Count------- -->
-  <div class="container count-container" style="margin-top: 7rem; margin-bottom:7rem;">
-    <div class="count-heading">
-      <h1>Our Achievements</h1>
-      <p>with our CAT Online Courses</p>
-    </div>
-    <div class="count_main_container">
-      <div class="counter-container">
-        <div class="counter counter1" data-target="1.5">0</div>
-        <span style="    font-size: 60px;
-    font-weight: 700;
-    line-height: 90px;
-    color: #f1612ccc;
-    display: inline-block;">K</span>
-        <span>IIM</span>
-        <p>Converts</p>
-      </div>
-      <div class="counter-container">
-        <div class="counter" data-target="157">0</div>
-        <span>Scored</span>
-        <p>99+ Percentile</p>
-      </div>
-      <div class="counter-container">
-        <div class="counter" data-target="286">0</div>
-        <span>Scored</span>
-        <p>97+ Percentile</p>
-      </div>
-      <div class="counter-container">
-        <div class="counter" data-target="397">0</div>
-        <span>Scored</span>
-        <p>95+ Percentile</p>
-      </div>
-      <div class="counter-container">
-        <div class="counter" data-target="127">0</div>
-        <span>Students</span>
-        <p>in Elite B School</p>
-      </div>
-    </div>
-  </div>
-  <!-- ---- End of Count----- -->
-  <!-- ------------ Decidated Section ------------- -->
-  <div class="container">
-    <div class="dedicated-heading">
-      <p class="para1">Best Servies</p>
-      <h1>Dedicated to make you Crack CAT</h1>
-      <p>With percentilers, you are one Step closer to your dream <strong>B-School</strong>.</p>
-    </div>
-  </div>
-  <!-- ------------ End of Decidated Section ------------- -->
-
-  <!-- ------- Video---------- -->
-  <div class="container video">
-    <iframe id="video" src="https://www.youtube.com/watch?v=nIv26cE7lkM">
-    </iframe>
-    <button id="play_button">
-      <img src="images/play-button.png" alt="playButton">
-    </button>
-  </div>
-  <!-- ------- End of Video---------- -->
-
-  <!-- ---- Qualities---- -->
-  <div class="container" style="margin-top: 3rem; margin-bottom: 3rem">
-    <div class="row quality">
-      <div class="col-lg-4 q1">
-        <div class="icon">
-          <img src="images/icon1.png" alt="icon1" />
-        </div>
-        <div class="text">
-          <h4>Learn from the best</h4>
+    <!-- ------------ Footer -------------------- -->
+    <div
+      class="container-fluid footer0"
+      style="background-color: #232323; color: white"
+    >
+      <div class="container footer">
+        <div class="footer-first">
+          <img class="footer-logo" src="images/footer_logo.png" alt="logo" />
           <p>
-            It's very easy to join us with just an email and a strong desire
-            that makes you consistent
+            Percentilers is an Indian platform providing highly interactive and
+            result-driven online classes for CAT and more management exams.
           </p>
-        </div>
-        <span>
-          <div class="line"></div>
-        </span>
-      </div>
-      <div class="col-lg-4 q1">
-        <div class="icon">
-          <img src="images/icon2.png" alt="icon2" />
-        </div>
-        <div class="text">
-          <h4>Excellent Education</h4>
-          <p>
-            the quality of the lessons are very good and of international
-            standard so that you will get maximum
-          </p>
-        </div>
-        <span>
-          <div class="line"></div>
-        </span>
-      </div>
-      <div class="col-lg-4 q1">
-        <div class="icon">
-          <img src="images/icon3.png" alt="icon3" />
-        </div>
-        <div class="text">
-          <h4>Affordable prices</h4>
-          <p>
-            Affordable prices and friendly to your unemployed pocket makes
-            this even more fitting
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ---- End of Qualities---- -->
-  <!-- ------- Social media----- -->
-  <div class="socialMedia">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-sm-12 social1">
-          <h3>Any queries on CAT Online Coaching for CAT 2021</h3>
-        </div>
-        <div class="col-lg-6 col-sm-12 social">
-          <div class="whatsapp">
-            <span><img src="images/whatsapp.png" alt="whatsapp" /></span>
-            <a style="text-decoration : none; color: #121212; font-weight:600;" href="">
-              <h3>Whatsapp</h3>
-            </a>
+          <div class="footer-icons">
+            <a href="#"><img src="images/fb.png" alt="fb" /></a>
+            <a href="#"><img src="images/insta.png" alt="insta" /></a>
+            <a href="#"><img src="images/twitter.png" alt="twitter" /></a>
           </div>
-          <div class="telegram">
-            <span><img src="images/telegram.png" alt="telegram" /></span>
-            <a style="text-decoration : none; color: #121212; font-weight:600;" href="">
-              <h3>Join Telegram Group</h3>
-            </a>
+        </div>
+        <div class="links">
+          <div class="footer-second">
+            <h5>Links</h5>
+            <ul>
+              <li>Home</li>
+              <li>Services</li>
+              <li>Schedule</li>
+              <li>Book</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="footer-third">
+            <h5>About</h5>
+            <ul>
+              <li>Partners</li>
+              <li>Careers</li>
+              <li>Press</li>
+              <li>Community</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-fourth">
+          <h5>Our Office</h5>
+          <div class="address1">
+            <p class="add1">Mumbai</p>
+            <p>JI. Griya Permata Hijau no D1 Purwomartani Mumbai 401105</p>
+          </div>
+          <div class="address2">
+            <p class="add2">Delhi</p>
+            <p>35 Mandalay Road 13–37 Mandalay Towers Noida 308215</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- -------- End of Social Media ----------- -->
-  <!-- ------------- Cards 1 ------------ -->
-  <div class="container firstCard" style="margin-top: 3rem; margin-bottom: 3rem">
-    <div class="first">
-      <h1>What does Percentilers offers in CAT online Preperation</h1>
-      <p>
-        Sample up to 10% of the product for free, but you may not like it and
-        may not buy it.
-      </p>
-      <img src="images/Mask Group.png" alt="maskGroup" />
+    <!-- ------------ End of  Footer -------------------- -->
+    <!-- ---------- Copyright---------- -->
+    <div class="copyright">
+      <p>© 2021 percentilers All rights reserved.</p>
     </div>
-    <div class="second">
-      <div class="card card1">
-        <div class="card-body">
-          <div class="card-image">
-            <img src="images/interactive1.png" alt="interactive1" />
-          </div>
-          <h5 class="card-title card-title1">Interactive Online Classes</h5>
-          <p class="card-text card-text1">
-            For robust CAT online preparation, you can unmute yourself during
-            the live classes and ask your doubts quickly to the educator.
-          </p>
-        </div>
-      </div>
+    <!-- ----------End of  Copyright---------- -->
 
-      <div class="card card1">
-        <div class="card-body">
-          <div class="card-image">
-            <img src="images/gamepad1.png" alt="gamepad" />
-          </div>
-          <h5 class="card-title card-title1">Interactive Online Classes</h5>
-          <p class="card-text card-text1">
-            For robust CAT online preparation, you can unmute yourself during
-            the live classes and ask your doubts quickly to the educator.
-          </p>
-        </div>
-      </div>
-      <div class="card card1">
-        <div class="card-body">
-          <div class="card-image">
-            <img src="images/question1.png" alt="question" />
-          </div>
-          <h5 class="card-title card-title1">Interactive Online Classes</h5>
-          <p class="card-text card-text1">
-            For robust CAT online preparation, you can unmute yourself during
-            the live classes and ask your doubts quickly to the educator.
-          </p>
-        </div>
-      </div>
-      <div class="card card1">
-        <div class="card-body">
-          <div class="card-image">
-            <img src="images/job-interview.png" alt="interview" />
-          </div>
-          <h5 class="card-title card-title1">Interactive Online Classes</h5>
-          <p class="card-text card-text1">
-            For robust CAT online preparation, you can unmute yourself during
-            the live classes and ask your doubts quickly to the educator.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ------------- End of Cards 1 ------------ -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+      integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-------- Card 2---------------->
-
-  <div class="container">
-    <div class="card2-heading">
-      <h3>TESTIMONIALS</h3>
-      <h1>What students are saying about our CAT online course</h1>
-    </div>
-    <div class="secondCard">
-      <div class="inside-card">
-        <div class="card card2" style="width: 396px; box-shadow: 10px 24px 54px rgb(0 0 0 / 15%)">
-          <div class="card-body">
-            <p class="card-text card-text2">
-              I started my CAT preparation in May. After searching for more
-              than two weeks, I ended up enrolling in Percentilers, and this
-              was the best decision of my life so far. Amazing Pedagogy of
-              both Pranshul Sir and Mayank Sir. Taking online classes seems
-              like a video call with a friend yet too informative. Would
-              surely recommend it without any doubt.
-            </p>
-            <div class="secondCard-info">
-              <img src="images/img1.png" alt="image1" />
-              <div class="images-info">
-                <h5>Akansha Gangwar</h5>
-                <p style="font-weight: 700">JBMIS Mumbai</p>
-                <p>98.06%iler CAT 2020</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card card2" style="width: 396px; box-shadow: 10px 24px 54px rgb(0 0 0 / 15%)">
-          <div class="card-body">
-            <p class="card-text card-text2">
-              I started my CAT preparation in May. After searching for more
-              than two weeks, I ended up enrolling in Percentilers, and this
-              was the best decision of my life so far. Amazing Pedagogy of
-              both Pranshul Sir and Mayank Sir. Taking online classes seems
-              like a video call with a friend yet too informative. Would
-              surely recommend it without any doubt.
-            </p>
-            <div class="secondCard-info">
-              <img src="images/img1.png" alt="image1" />
-              <div class="images-info">
-                <h5>Akansha Gangwar</h5>
-                <p style="font-weight: 700">JBMIS Mumbai</p>
-                <p>98.06%iler CAT 2020</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card card2" style="width: 396px; box-shadow: 10px 24px 54px rgb(0 0 0 / 15%)">
-          <div class="card-body">
-            <p class="card-text card-text2">
-              I started my CAT preparation in May. After searching for more
-              than two weeks, I ended up enrolling in Percentilers, and this
-              was the best decision of my life so far. Amazing Pedagogy of
-              both Pranshul Sir and Mayank Sir. Taking online classes seems
-              like a video call with a friend yet too informative. Would
-              surely recommend it without any doubt.
-            </p>
-            <div class="secondCard-info">
-              <img src="images/img1.png" alt="image1" />
-              <div class="images-info">
-                <h5>Akansha Gangwar</h5>
-                <p style="font-weight: 700">JBMIS Mumbai</p>
-                <p>98.06%iler CAT 2020</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card card2" style="width: 396px; box-shadow: 10px 24px 54px rgb(0 0 0 / 15%)">
-          <div class="card-body">
-            <p class="card-text card-text2">
-              I started my CAT preparation in May. After searching for more
-              than two weeks, I ended up enrolling in Percentilers, and this
-              was the best decision of my life so far. Amazing Pedagogy of
-              both Pranshul Sir and Mayank Sir. Taking online classes seems
-              like a video call with a friend yet too informative. Would
-              surely recommend it without any doubt.
-            </p>
-            <div class="secondCard-info">
-              <img src="images/img1.png" alt="image1" />
-              <div class="images-info">
-                <h5>Akansha Gangwar</h5>
-                <p style="font-weight: 700">JBMIS Mumbai</p>
-                <p>98.06%iler CAT 2020</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card card2" style="width: 396px; box-shadow: 10px 24px 54px rgb(0 0 0 / 15%)">
-          <div class="card-body">
-            <p class="card-text card-text2">
-              I started my CAT preparation in May. After searching for more
-              than two weeks, I ended up enrolling in Percentilers, and this
-              was the best decision of my life so far. Amazing Pedagogy of
-              both Pranshul Sir and Mayank Sir. Taking online classes seems
-              like a video call with a friend yet too informative. Would
-              surely recommend it without any doubt.
-            </p>
-            <div class="secondCard-info">
-              <img src="images/img1.png" alt="image1" />
-              <div class="images-info">
-                <h5>Akansha Gangwar</h5>
-                <p style="font-weight: 700">JBMIS Mumbai</p>
-                <p>98.06%iler CAT 2020</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card card2" style="width: 396px; box-shadow: 10px 24px 54px rgb(0 0 0 / 15%)">
-          <div class="card-body">
-            <p class="card-text card-text2">
-              I started my CAT preparation in May. After searching for more
-              than two weeks, I ended up enrolling in Percentilers, and this
-              was the best decision of my life so far. Amazing Pedagogy of
-              both Pranshul Sir and Mayank Sir. Taking online classes seems
-              like a video call with a friend yet too informative. Would
-              surely recommend it without any doubt.
-            </p>
-            <div class="secondCard-info">
-              <img src="images/img1.png" alt="image1" />
-              <div class="images-info">
-                <h5>Akansha Gangwar</h5>
-                <p style="font-weight: 700">JBMIS Mumbai</p>
-                <p>98.06%iler CAT 2020</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ----------- carousel ---------------------- -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card card2" style="
-                  width: 396px;
-                  box-shadow: 10px 24px 54px rgb(0 0 0 / 15%);
-                ">
-              <div class="card-body">
-                <p class="card-text card-text2">
-                  I started my CAT preparation in May. After searching for
-                  more than two weeks, I ended up enrolling in Percentilers,
-                  and this was the best decision of my life so far. Amazing
-                  Pedagogy of both Pranshul Sir and Mayank Sir. Taking online
-                  classes seems like a video call with a friend yet too
-                  informative. Would surely recommend it without any doubt.
-                </p>
-                <div class="secondCard-info">
-                  <img src="images/img1.png" alt="image1" />
-                  <div class="images-info">
-                    <h5>Akansha Gangwar</h5>
-                    <p style="font-weight: 700">JBMIS Mumbai</p>
-                    <p>98.06%iler CAT 2020</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card card2" style="
-                  width: 396px;
-                  box-shadow: 10px 24px 54px rgb(0 0 0 / 15%);
-                ">
-              <div class="card-body">
-                <p class="card-text card-text2">
-                  I started my CAT preparation in May. After searching for
-                  more than two weeks, I ended up enrolling in Percentilers,
-                  and this was the best decision of my life so far. Amazing
-                  Pedagogy of both Pranshul Sir and Mayank Sir. Taking online
-                  classes seems like a video call with a friend yet too
-                  informative. Would surely recommend it without any doubt.
-                </p>
-                <div class="secondCard-info">
-                  <img src="images/img1.png" alt="image1" />
-                  <div class="images-info">
-                    <h5>Akansha Gangwar</h5>
-                    <p style="font-weight: 700">JBMIS Mumbai</p>
-                    <p>98.06%iler CAT 2020</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card card2" style="
-                  width: 396px;
-                  box-shadow: 10px 24px 54px rgb(0 0 0 / 15%);
-                ">
-              <div class="card-body">
-                <p class="card-text card-text2">
-                  I started my CAT preparation in May. After searching for
-                  more than two weeks, I ended up enrolling in Percentilers,
-                  and this was the best decision of my life so far. Amazing
-                  Pedagogy of both Pranshul Sir and Mayank Sir. Taking online
-                  classes seems like a video call with a friend yet too
-                  informative. Would surely recommend it without any doubt.
-                </p>
-                <div class="secondCard-info">
-                  <img src="images/img1.png" alt="image1" />
-                  <div class="images-info">
-                    <h5>Akansha Gangwar</h5>
-                    <p style="font-weight: 700">JBMIS Mumbai</p>
-                    <p>98.06%iler CAT 2020</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <!-- ----------- End of carousel ---------------------- -->
-    </div>
-  </div>
-  <!-------- End of  Card 2---------------->
-  <!-- ------------- Prices ---------------- -->
-  <div class="container price">
-    <div class="price-heading">
-      <p>Best package</p>
-      <h1>Percentilers CAT Online Courses</h1>
-      <p>The classes that are so much in demand by students are below that we have selected</p>
-      <button>All Course</button>
-    </div>
-    <div class="price-card">
-      <!-- ----- Card 1 ----- -->
-      <div class="card" style="width: 18rem;">
-        <img src="images/price-card.png" class="card-img-top" alt="price">
-        <div class="card-body">
-          <h5 class="card-title">CAT Comprehensive 2021</h5>
-          <div class="price-info">
-            <p>5 Courses</p>
-            <h2>₹ 18,499</h2>
-          </div>
-        </div>
-      </div>
-      <!-- ------  Card 2--------- -->
-      <div class="card" style="width: 18rem;">
-        <img src="images/price-card.png" class="card-img-top" alt="price">
-        <div class="card-body">
-          <h5 class="card-title">CAT Comprehensive 2021</h5>
-          <div class="price-info">
-            <p>5 Courses</p>
-            <h2>₹ 18,499</h2>
-          </div>
-        </div>
-      </div>
-      <!-- ----- card 3------------ -->
-      <div class="card" style="width: 18rem;">
-        <img src="images/price-card.png" class="card-img-top" alt="price">
-        <div class="card-body">
-          <h5 class="card-title">CAT Comprehensive 2021</h5>
-          <div class="price-info">
-            <p>5 Courses</p>
-            <h2>₹ 18,499</h2>
-          </div>
-        </div>
-      </div>
-      <!-- -------- card 4 ------------ -->
-      <div class="card" style="width: 18rem;">
-        <img src="images/price-card.png" class="card-img-top" alt="price">
-        <div class="card-body">
-          <h5 class="card-title">CAT Comprehensive 2021</h5>
-          <div class="price-info">
-            <p>5 Courses</p>
-            <h2>₹ 18,499</h2>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!-- --------- Mobile Price card -------------- -->
-    <div class="price-card-mobile">
-      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-        <ul class="uk-slider-items uk-grid"> 
-          <!-- style="transform: translate3d(0px, 0px, 0px); -->
-          <li class="uk-width-4-5">
-            <div class="uk-panel">
-              <div class="card" style="width: 18rem;">
-                <img src="images/price-card.png" class="card-img-top" alt="price">
-                <div class="card-body">
-                  <h5 class="card-title">CAT Comprehensive 2021</h5>
-                  <div class="price-info">
-                    <p>5 Courses</p>
-                    <h2>₹ 18,499</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="uk-width-4-5">
-            <div class="uk-panel">
-              <div class="card" style="width: 18rem;">
-                <img src="images/price-card.png" class="card-img-top" alt="price">
-                <div class="card-body">
-                  <h5 class="card-title">CAT Comprehensive 2021</h5>
-                  <div class="price-info">
-                    <p>5 Courses</p>
-                    <h2>₹ 18,499</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="uk-width-4-5">
-            <div class="uk-panel">
-              <div class="card" style="width: 18rem;">
-                <img src="images/price-card.png" class="card-img-top" alt="price">
-                <div class="card-body">
-                  <h5 class="card-title">CAT Comprehensive 2021</h5>
-                  <div class="price-info">
-                    <p>5 Courses</p>
-                    <h2>₹ 18,499</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="uk-width-4-5">
-            <div class="uk-panel">
-              <div class="card" style="width: 18rem;">
-                <img src="images/price-card.png" class="card-img-top" alt="price">
-                <div class="card-body">
-                  <h5 class="card-title">CAT Comprehensive 2021</h5>
-                  <div class="price-info">
-                    <p>5 Courses</p>
-                    <h2>₹ 18,499</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="uk-width-4-5">
-            <div class="uk-panel">
-              <div class="card" style="width: 18rem;">
-                <img src="images/price-card.png" class="card-img-top" alt="price">
-                <div class="card-body">
-                  <h5 class="card-title">CAT Comprehensive 2021</h5>
-                  <div class="price-info">
-                    <p>5 Courses</p>
-                    <h2>₹ 18,499</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
-          uk-slider-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
-          uk-slider-item="next"></a>
-
-      </div>
-    </div>
-  </div>
-  <!-- ------------- End of Prices ---------------- -->
-  <!-- ---------- About --------------- -->
-  <div class="container">
-    <div class="about-container">
-      <img src="images/About_image.png" alt="about1">
-      <div class="about-info">
-        <p style="color:#30B6D1; letter-spacing:1px; line-height:24px; text-transform:uppercase">about Percentilers</p>
-        <h1>Percentilers Offers the Best Online CAT Preparation.</h1>
-        <p class="para2">Personalised Preparation with dedicated Buddy Mentor, To equip you with all the necessary tools
-          to Crack CAT</p>
-        <ul>
-          <li>Weekly Tests with A.I. Based analytics and Personalised Suggestions.</li>
-          <li>Most Comprehensive Gamified Course for CAT</li>
-          <li>Humongous interactive Sessions with Faculties, IIM Alumnis and Industry experts.</li>
-          <li>One-One Live Doubt Sessions Every weekend.</li>
-          <li>Focused on Logics rather than cramming Formulas</li>
-        </ul>
-        <button>Start Your Free Trail Now</button>
-      </div>
-    </div>
-    <div class="about-container-1">
-      <img src="images/about_image1.png" alt="about2">
-      <div class="about-info-1">
-        <p class="para4">Idea and Vision </p>
-        <h1>Idea behind Percentilers Best Online CAT Coaching</h1>
-        <p class="para3">The Driving Idea behind Percentilers CAT Classes is to Provide the Best Student Centered
-          Learning Experience,
-          wherein We take the Guarentee of the services and are answerable to any shortcomings of the Student,
-          reinforcing the idea and attitude and personality required not to crack only Competitive Exams like CAT but be
-          a better version of self as a whole.
-          Unlike other institutes, percentilers comes without a glass sheild between the faculty and students, helping
-          them overcome any kind of troughs in their preparation journey.
-          The focal point will be counseling wheather on personal or Preparational level.</p>
-        <h2 class="name">- Pranshul </h2>
-      </div>
-      <div class="mobile-info">
-        <p class="mobile-para1">BEST SERVICES</p>
-        <h1>Meet Our Amazing And Expert Instructurs</h1>
-        <p class="mobile-para2">Find your best mentor and adjust your
-          study time by following your activities and
-          we will be able to adjust very well
-        </p>
-        <h2>- Pranshul</h2>
-      </div>
-    </div>
-  </div>
-  <!-- ---------- ENd of About --------------- -->
-  <!-- ----------------- Steps ------------------ -->
-  <div class="container steps">
-    <h1>Get your 5 Stepguide to crack CAT</h1>
-    <div class="forms">
-      <form style="position: relative;">
-        <input type="tel" placeholder="Enter your Mobile no.">
-        <input type="email" placeholder="Enter your email address">
-        <input type="submit" value="submit">
-      </form>
-    </div>
-  </div>
-  <!-- ------- Social media----- -->
-  <div class="socialMedia">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-sm-12 social1">
-          <h3>Any queries on CAT Online Coaching for CAT 2021</h3>
-        </div>
-        <div class="col-lg-6 col-sm-12 social">
-          <div class="whatsapp">
-            <span><img src="images/whatsapp.png" alt="whatsapp" /></span>
-            <a style="text-decoration : none; color: #121212; font-weight:600;" href="">
-              <h3>Whatsapp</h3>
-            </a>
-          </div>
-          <div class="telegram">
-            <span><img src="images/telegram.png" alt="telegram" /></span>
-            <a style="text-decoration : none; color: #121212; font-weight:600;" href="">
-              <h3>Join Telegram Group</h3>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- -------- End of Social Media ----------- -->
-  <!-- ----------------- ENd of Steps ------------------ -->
-
-  <!-- ------------ Footer -------------------- -->
-  <div class="container-fluid" style="background-color: #232323; color:white">
-    <div class="container footer">
-      <div class="footer-first">
-        <img src="images/footer_logo.png" alt="logo">
-        <p>We envision a world where everyone feels welcome in the American hiking community and has permanent access to
-          meaningful hiking.</p>
-        <div class="footer-icons">
-          <a href="#"><img src="images/fb.png" alt="fb"></a>
-          <a href="#"><img src="images/insta.png" alt="insta"></a>
-          <a href="#"><img src="images/twitter.png" alt="twitter"></a>
-        </div>
-      </div>
-      <div class="links">
-        <div class="footer-second">
-          <h5>Links</h5>
-          <ul>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Schedule</li>
-            <li>Book</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-        <div class="footer-third">
-          <h5>About</h5>
-          <ul>
-            <li>Partners</li>
-            <li>Careers</li>
-            <li>Press</li>
-            <li>Community</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-fourth">
-        <h5>Our Office</h5>
-        <div class="address1">
-          <p class="add1">Mumbai</p>
-          <p>Griya Permata Hijau no D1 Purwomartani Mumbai 401105</p>
-        </div>
-        <div class="address2">
-          <p class="add2">Delhi</p>
-          <p>Delhi 35 Mandalay Road 13–37 Mandalay Towers Noida 308215</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <!-- ------------ End of  Footer -------------------- -->
-  <!-- ---------- Copyright---------- -->
-  <div class="copyright">
-    <p>© 2021 percentilers All rights reserved.</p>
-  </div>
-  <!-- ----------End of  Copyright---------- -->
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
-    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
-    crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-  <!-- UIkit JS -->
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
-</body>
-
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="index.js"></script>
+  </body>
 </html>

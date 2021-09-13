@@ -1,0 +1,97 @@
+html {
+  font-size: 10px !important;
+}
+.telegram {
+  width: 32% !important;
+}
+.card-title1 {
+  font-size: 1.4rem;
+}
+.card-title {
+  font-size: 1.1rem !important;
+}
+.price-info h2 {
+  font-size: 1.7rem;
+}
+.price-info p {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+.whatsapp span img,
+.telegram span img {
+  width: 70%;
+}
+.whatsapp h3,
+.telegram h3 {
+  font-size: 1.3rem;
+}
+.about-container-1 {
+  padding-bottom: 31rem;
+}
+.footer-icons img {
+  width: 10%;
+}
+.footer-icons a {
+  padding: 4px 4px;
+}
+#play_button img {
+  width: 50%;
+}
+.about-info-1 {
+  top: 20rem;
+}
+.about-container-1 img {
+  width: 50%;
+}
+.image1 img {
+  width: 127%;
+}
+.steps input[type="email"] {
+  padding-right: 12.375rem;
+}
+.about-info-1 .para4 {
+  margin-left: 18rem;
+}
+.about-info-1 h1 {
+  margin-left: 17.7rem;
+}
+.about-info-1 .name {
+  padding-bottom: 1rem;
+}
+@media only screen and (max-width: 681px) {
+  .card-text1 {
+    line-height: 1.6rem;
+  }
+  .telegram {
+    width: 33% !important;
+  }
+  .whatsapp span,
+  .telegram span {
+    margin-right: 0;
+  }
+  .price-info h2 {
+    font-size: 1.5rem;
+  }
+  .about-info-1 {
+    top: 8rem;
+    left: 18rem;
+  }
+  .about-info-1 h1 {
+    margin-left: 16.9rem;
+  }
+  #play_button img {
+    width: 40%;
+  }
+  .video button {
+    right: 43%;
+  }
+  .btn2 {
+    width: 14%;
+  }
+  .footer-icons img {
+    width: 8%;
+  }
+  .footer-icons a {
+    padding: 7px 5px;
+  }
+}

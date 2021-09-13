@@ -1,0 +1,267 @@
+html {
+  font-size: 15px !important;
+}
+
+.container {
+  max-width: 1135px !important;
+}
+.navbar-nav {
+  padding-left: 5rem !important;
+}
+h1 {
+  font-size: 2.2rem !important;
+}
+.counter,
+letter {
+  font-size: 46px !important;
+}
+
+.counter-container span:first-of-type {
+  font-size: 46px;
+}
+.counter-container span:last-of-type {
+  font-size: 22px !important;
+}
+.counter-container p {
+  line-height: 15px;
+}
+.dedicated-heading {
+  grid-gap: 20rem;
+}
+.images-info h5 {
+  font-size: 20px;
+}
+.whatsapp,
+.telegram {
+  padding: 9px;
+}
+.whatsapp h3,
+.telegram h3 {
+  font-size: 21px;
+}
+.firstCard {
+  grid-template-columns: 1fr 1fr;
+}
+.card1 {
+  height: auto;
+  width: 100%;
+}
+.inside-card {
+  grid-gap: 0;
+  grid-gap: 20px;
+}
+.second .card-body {
+  padding: 0.5rem !important;
+}
+
+.card-text2 {
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.slider {
+  display: none;
+}
+.card2 {
+  width: 360px !important;
+}
+.first img {
+  width: 100%;
+}
+.price-heading button {
+  top: 88px;
+}
+.price-card {
+  column-gap: 2rem;
+}
+.about-info-1 {
+  width: 71%;
+}
+.about-info-1 h1 {
+  margin-left: 21rem;
+}
+@media only screen and (max-width: 1151px) {
+  html {
+    font-size: 15px !important;
+  }
+  .container {
+    max-width: 1100px !important;
+  }
+  .second {
+    grid-gap: 1rem;
+  }
+  .card-text1 {
+    line-height: 27px;
+  }
+  .card1 {
+    width: 16.3rem;
+  }
+  .card2 {
+    width: 100% !important;
+  }
+  .about-container img {
+    width: 100%;
+  }
+
+  .about-info-1 h1 {
+    margin-left: 19rem;
+  }
+  .about-info-1 .para4 {
+    margin-left: 13rem;
+  }
+  .about-info-1 h1 {
+    margin-left: 13rem;
+    width: 77%;
+  }
+  .about-info-1 {
+    width: 74%;
+    top: 10.5rem;
+    left: 15rem;
+  }
+}
+@media only screen and (max-width: 1001px) {
+  html {
+    font-size: 14px;
+  }
+  .banner h1 {
+    line-height: 3.87rem;
+  }
+  .navbar-nav {
+    padding-left: 1rem !important;
+  }
+  .container {
+    max-width: 965px !important;
+  }
+  .dedicated-heading {
+    grid-gap: 7rem;
+  }
+  .whatsapp,
+  .telegram {
+    font-size: 10px;
+    padding: 7px 14px !important;
+  }
+  .whatsapp h3,
+  .telegram h3 {
+    font-size: 1.7em;
+  }
+  .telegram {
+    width: 56%;
+    margin-right: 0;
+  }
+  .about-container-1 img {
+    width: 53%;
+  }
+  .about-info-1 {
+    width: 72% !important;
+    top: 13.9rem;
+    left: 19rem;
+    height: auto !important;
+  }
+  .about-info-1 h1 {
+    line-height: 3.3rem;
+  }
+  .about-info-1 h1 {
+    font-size: 2rem !important;
+    margin-bottom: 1rem;
+    margin-left: 18.7rem;
+  }
+
+  .about-info-1 .para4 {
+    font-size: 1rem;
+    margin-left: -2rem;
+  }
+  .para3 {
+    font-size: 1rem !important;
+    line-height: 2rem !important;
+  }
+}
+@media only screen and (max-width: 977px) {
+  html {
+    font-size: 13px;
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    max-width: 94% !important;
+  }
+  .banner {
+    max-width: 965px !important;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .btn1 {
+    display: inherit;
+    padding: 0;
+  }
+  .btn2 {
+    width: 12%;
+  }
+  .image1 img {
+    width: 100%;
+  }
+  .about-info-1 h1 {
+    font-size: 2rem !important;
+    width: 60%;
+  }
+  .q1 {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .q1 span {
+    display: none;
+  }
+  .whatsapp,
+  .telegram {
+    margin-top: 1.5rem;
+  }
+  .telegram {
+    width: 29% !important;
+  }
+}
+@media only screen and (max-width: 902px) {
+  html {
+    font-size: 12px;
+  }
+  .counter {
+    font-size: 2.5rem !important;
+  }
+  .counter-container span:first-of-type {
+    font-size: 2.5rem;
+  }
+  .counter-container span:last-of-type {
+    font-size: 1.5rem !important;
+  }
+  .counter-container p {
+    font-size: 1.3rem;
+  }
+  .telegram {
+    width: 33% !important;
+  }
+  .card-text1 {
+    line-height: 2rem;
+  }
+  .card-text2 {
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 2rem;
+  }
+  .images-info h5 {
+    font-size: 1.4rem;
+  }
+  .images-info p {
+    font-size: 1.1rem;
+  }
+  .footer-fourth {
+    width: 83%;
+  }
+  .footer-icons a {
+    padding: 9px 6px;
+  }
+}

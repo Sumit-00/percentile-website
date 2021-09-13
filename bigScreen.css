@@ -1,0 +1,254 @@
+/* html {
+  font-size: 21px;
+}
+.container {
+  width: 75%;
+}
+p {
+  font-size: 1rem;
+}
+.card {
+  width: 100% !important;
+}
+.price-card .card {
+  width: 24% !important;
+}
+.card-title {
+  font-size: 1.5rem !important;
+}
+.price-info p {
+  font-size: 1rem;
+}
+.price-info h2 {
+  font-size: 1.5rem;
+  line-height: 70px;
+}
+.card-body {
+  padding: 1.5rem 1rem;
+}
+.firstCard {
+  grid-template-columns: 1fr 1fr;
+}
+.first img {
+  width: 100%;
+}
+.about-container img {
+  width: 100%;
+}
+.video button {
+  right: 48%;
+}
+.navbar-brand img {
+  width: 138%;
+}
+.banner img {
+  width: 100%;
+}
+.navbar-nav {
+  padding-left: 31rem !important;
+}
+.para2,
+.about-info li {
+  line-height: 3rem;
+}
+.about-container-1 img {
+  width: 34% !important;
+}
+.price-heading button {
+  top: 5rem;
+}
+.about-info-1 {
+  top: 22rem;
+  width: 74%;
+  left: 27rem;
+}
+.about-info-1 .para4 {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+.about-info-1 h1 {
+  font-size: 2.1rem;
+  line-height: 3rem;
+  width: 51%;
+}
+.container1 button,
+.about-info button {
+  padding: 20px 24px;
+}
+.navbar-nav {
+  padding-left: 19rem !important;
+}
+#video {
+  width: 80%;
+}
+.social1 h3 {
+  font-size: 1.6rem;
+}
+.firstCard {
+  margin-top: 6rem;
+  margin-bottom: 9rem;
+  column-gap: 2rem;
+}
+.first h1 {
+  width: 38rem;
+}
+.card-front h5 {
+  text-align: center;
+}
+card-text1 p {
+  font-size: 1rem;
+}
+.about-info-1 .para3 {
+  font-size: 1.1rem;
+  line-height: 2.5rem;
+}
+.about-info-1 {
+  top: 16.4rem;
+  left: 21rem;
+}
+.footer-icons {
+  margin-top: 3rem;
+}
+footer-logo {
+  width: 60%;
+  margin-bottom: 2rem;
+}
+.footer-icons a {
+  padding: 20px 16px;
+}
+.footer-icons a img {
+  width: 6%;
+} */
+html {
+  font-size: 1.6rem;
+}
+p,
+button {
+  font-size: 1rem;
+}
+.banner button {
+  margin-bottom: 2rem;
+}
+.image1 img {
+  width: 100%;
+}
+ul li {
+  font-size: 1rem;
+}
+.navbar-nav {
+  padding-left: 27% !important;
+}
+.navbar-brand img {
+  width: 140%;
+}
+.banner h1 {
+  max-width: 82%;
+}
+.btn2 {
+  padding: 0.625rem 2rem !important;
+}
+#video {
+  width: 70%;
+  height: 560px;
+}
+.video button {
+  right: 48%;
+}
+.icon img {
+  width: 3rem;
+}
+.price-card .card-body h5 {
+  text-align: center;
+}
+.footer-icons a {
+  padding: 0.8rem 0.5rem;
+}
+.footer-icons img {
+  width: 6%;
+}
+.footer-logo {
+  width: 65%;
+}
+.footer-first p {
+  margin-top: 1.5rem;
+}
+.about-info-1 {
+  top: 20rem;
+  left: 23rem;
+}
+@media only screen and (max-width: 2640px) {
+  .about-info-1 {
+    top: 19rem;
+  }
+}
+@media only screen and (max-width: 2561px) {
+  .about-info-1 {
+    top: 16.5rem;
+  }
+}
+@media only screen and (max-width: 2546px) {
+  .about-info-1 {
+    top: 18rem;
+  }
+}
+
+@media only screen and (max-width: 2459px) {
+  .about-info-1 {
+    top: 16.7rem;
+    left: 20rem;
+  }
+}
+@media only screen and (max-width: 2379px) {
+  .about-info-1 {
+    top: 15.7rem;
+    left: 20rem;
+  }
+}
+@media only screen and (max-width: 2215px) {
+  html {
+    font-size: 1.4rem;
+  }
+  .about-info-1 {
+    top: 17.5rem;
+    left: 21rem;
+  }
+}
+@media only screen and (max-width: 2119px) {
+  .about-info-1 {
+    top: 16rem;
+    left: 21rem;
+  }
+}
+@media only screen and (max-width: 2080px) {
+  .about-info-1 {
+    top: 15rem;
+    left: 20rem;
+  }
+}
+@media only screen and (max-width: 1879px) {
+  html {
+    font-size: 1.3rem;
+  }
+  .about-info-1 {
+    top: 14.5rem;
+    left: 20rem;
+  }
+}
+@media only screen and (max-width: 1706px) {
+  html {
+    font-size: 1.2rem;
+  }
+  .about-info-1 {
+    top: 13.5rem;
+    left: 20rem;
+  }
+}
+@media only screen and (max-width: 1612px) {
+  html {
+    font-size: 1.1rem;
+  }
+  .about-info-1 {
+    top: 13.5rem;
+    left: 20rem;
+  }
+}

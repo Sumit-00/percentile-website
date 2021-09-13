@@ -1,0 +1,454 @@
+html {
+  font-size: 9px !important;
+}
+
+.image1 img {
+  width: 120%;
+}
+.telegram {
+  width: 55% !important;
+}
+.about-info-1 {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+}
+.para4 {
+  margin-left: 0 !important;
+}
+.navbar-brand img {
+  width: 80%;
+}
+.footer-logo {
+  width: 90%;
+  margin-bottom: 1.5rem;
+}
+.footer-first p {
+  margin-bottom: 2rem;
+}
+.price-info h2 {
+  font-size: 1.4rem;
+}
+.firstCard {
+  grid-column-gap: 1.3rem;
+}
+.footer-icons a {
+  padding: 4px 5px;
+}
+@media only screen and (max-width: 426px) {
+  html {
+    overflow-x: visible;
+    font-size: 14px !important;
+  }
+  h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .image1 img,
+  .first img,
+  .about-container-1 img,
+  .about-container img {
+    display: block;
+    width: 100%;
+  }
+  .container h1 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+    text-align: left;
+  }
+  .items {
+    flex-direction: column;
+  }
+  .navbar-nav {
+    padding-left: 0 !important;
+  }
+  .nav-grid {
+    display: grid !important;
+    grid-template-columns: 5fr 1fr;
+  }
+  #navbarNavDropdown {
+    margin-right: 0% !important;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .btn1 {
+    padding: 0 !important;
+    margin-bottom: 0.8em;
+  }
+  .banner h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .para1 {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 1px;
+    color: #30b6d1;
+    text-transform: uppercase;
+  }
+  .dedicated-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 54px;
+    grid-gap: 0;
+  }
+  .dedicated-heading h1 {
+    max-width: 290px;
+    text-align: center;
+  }
+  .dedicated-heading p:last-of-type {
+    text-align: center;
+    max-width: 292px;
+  }
+
+  /* --------- Count ------------- */
+  .counter {
+    font-size: 1.7rem !important;
+    line-height: 3.625rem;
+  }
+  .counter-container span:last-of-type {
+    font-size: 1.2rem !important;
+  }
+  .combine-counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .counter-container:nth-child(4),
+  .counter-container:nth-child(5) {
+    display: none;
+  }
+  .letter {
+    line-height: 3.625rem;
+    font-size: 1.7rem !important;
+  }
+  .counter-container p {
+    font-size: 1.1rem;
+  }
+  /* ------------ Video -------------- */
+  #play_button img {
+    width: 50%;
+  }
+  #play_button {
+    width: 19%;
+  }
+  .video {
+    margin-top: 0;
+  }
+  #video {
+    max-width: 324px;
+    height: 211px;
+  }
+  .video .button {
+    right: 42%;
+  }
+  /* --------------- Qualities -------------- */
+  .q1 span {
+    display: none;
+  }
+  .q1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .icon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .text p {
+    margin-inline: auto;
+    width: 284px;
+    text-align: center;
+    margin-bottom: 66px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0px;
+  }
+  /* --------------- Social Media --------------- */
+  .social1 h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    max-width: 281px;
+  }
+  .social h3 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+  }
+  .whatsapp img,
+  .telegram img {
+    height: 25.36px;
+    width: 25px;
+  }
+  .whatsapp span img,
+  .telegram span img {
+    width: 80%;
+  }
+  .whatsapp,
+  .telegram {
+    padding: 4px 9px !important;
+  }
+
+  .whatsapp,
+  .telegram {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    padding: 6px 0;
+    margin-right: 0;
+    border-radius: 6px;
+  }
+  .whatsapp {
+    grid-template-columns: 1fr 2fr;
+  }
+  .whatsapp span img {
+    margin-right: 6px;
+  }
+  .social {
+    column-gap: 4px;
+  }
+  .socialMedia .row > * {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .whatsapp span,
+  .telegram span {
+    margin-right: 0;
+    padding-left: 7px;
+  }
+  .whatsapp h3,
+  .telegram h3 {
+    margin-bottom: 0.2rem !important;
+    padding-right: 5px;
+    font-size: 0.9rem;
+  }
+  /* ------------- Card1 --------------- */
+  .card1 {
+    width: 22.3rem;
+  }
+  .firstCard {
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+  }
+  .second {
+    grid-template-columns: 1fr;
+  }
+  .first h1 {
+    width: 299px !important;
+  }
+  .first,
+  .second {
+    margin-inline: auto;
+  }
+
+  /* --------- Card 2------------ */
+  .inside-card {
+    display: none;
+  }
+  .card2-heading {
+    width: 300px;
+  }
+  .carousel {
+    display: block;
+  }
+  .card2 {
+    max-width: 21.3rem !important;
+  }
+  .carousel-indicators {
+    bottom: -42px !important;
+  }
+  .card-text2 {
+    font-weight: 400;
+  }
+  .carousel-indicators [data-bs-target] {
+    background-color: #5d5757 !important;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50%;
+    bottom: -10px;
+  }
+  /* ---------- Card 2- -------------- */
+  .price-heading button {
+    display: none;
+  }
+  .price-heading p:first-of-type {
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+  }
+  .price-heading h1 {
+    max-width: 300px;
+  }
+  .price-card {
+    display: none;
+  }
+  .card2 {
+    margin-inline: auto;
+  }
+  .card2-heading {
+    margin-inline: auto;
+  }
+  .price-heading p,
+  .price-heading h1 {
+    width: 80% !important;
+  }
+  .slider {
+    display: block;
+  }
+
+  /* -------- About ---------- */
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-info p:first-of-type {
+    margin-top: 1.5rem;
+  }
+  .about-info-1,
+  para4,
+  .about-info-1 h1,
+  para3,
+  name {
+    display: none;
+  }
+  .mobile-info {
+    display: block;
+  }
+  .mobile-info p:first-of-type {
+    color: #30b6d1;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+  }
+  .about-container-1 {
+    padding-bottom: 4rem !important;
+  }
+  .about-info-2 {
+    display: block;
+    color: white;
+    margin-top: 3rem;
+    padding: 1rem;
+    background: #f1612c;
+    margin-bottom: 4rem;
+    box-shadow: 10px 24px 54px rgb(0 0 0 / 25%);
+  }
+  .about-info-2 p {
+    max-width: 100%;
+  }
+  .about-info-2 p:nth-child(1) {
+    text-align: center;
+    color: #f2c154;
+    text-transform: uppercase;
+  }
+  .about-info-2 .name {
+    color: #f2c154;
+  }
+  /* -------- Steps---------- */
+  .steps h1 {
+    text-align: center;
+  }
+  .forms input[type="tel"] {
+    display: none;
+  }
+  .forms input[type="email"] {
+    width: 100%;
+    padding-right: 105px;
+  }
+  .steps input[type="submit"] {
+    padding: 11px 20px;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 1rem 0;
+  }
+  .footer-first {
+    margin-bottom: 40px;
+  }
+  .footer-icons img {
+    width: 6%;
+  }
+  .footer-fourth {
+    margin-left: 0;
+  }
+  .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+  }
+  .copyright {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .footer-logo {
+    width: 50%;
+  }
+  .copyright {
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 321px) {
+  html {
+    font-size: 10px !important;
+  }
+  .btn2 {
+    width: 35%;
+  }
+  .whatsapp,
+  .telegram {
+    padding: 7px 0px !important;
+  }
+  .whatsapp h3,
+  .telegram h3 {
+    font-size: 1.2rem;
+  }
+  .card1 {
+    width: 27.3rem;
+    padding: 1.5rem;
+  }
+  .footer-logo {
+    width: 60%;
+  }
+  .letter {
+    line-height: 36px !important;
+  }
+  .copyright p {
+    font-size: 1rem;
+  }
+  .about-info-1 {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+  }
+  .para4 {
+    margin-left: 0 !important;
+  }
+  .footer-icons a {
+    padding: 0 3px;
+  }
+}
