@@ -173,7 +173,7 @@ ul li {
   margin-top: 1.5rem;
 }
 .about-info-1 {
-  top: 20rem;
+  top: 18rem;
   left: 23rem;
 }
 @media only screen and (max-width: 2640px) {
@@ -181,6 +181,7 @@ ul li {
     top: 19rem;
   }
 }
+
 @media only screen and (max-width: 2561px) {
   .about-info-1 {
     top: 16.5rem;
