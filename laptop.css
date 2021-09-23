@@ -35,10 +35,6 @@ letter {
 .telegram {
   padding: 9px;
 }
-.whatsapp h3,
-.telegram h3 {
-  font-size: 21px;
-}
 .firstCard {
   grid-template-columns: 1fr 1fr;
 }
@@ -82,7 +78,7 @@ letter {
 }
 @media only screen and (max-width: 1151px) {
   html {
-    font-size: 15px !important;
+    font-size: 13px !important;
   }
   .container {
     max-width: 1100px !important;
@@ -145,11 +141,7 @@ letter {
     font-size: 1.7em;
   }
   .telegram {
-    width: 56%;
     margin-right: 0;
-  }
-  .about-container-1 img {
-    width: 53%;
   }
   .about-info-1 {
     width: 72% !important;
@@ -221,9 +213,6 @@ letter {
   .telegram {
     margin-top: 1.5rem;
   }
-  .telegram {
-    width: 29% !important;
-  }
 }
 @media only screen and (max-width: 902px) {
   html {
@@ -240,9 +229,6 @@ letter {
   }
   .counter-container p {
     font-size: 1.3rem;
-  }
-  .telegram {
-    width: 33% !important;
   }
   .card-text1 {
     line-height: 2rem;

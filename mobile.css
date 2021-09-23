@@ -7,6 +7,7 @@ html {
 }
 .telegram {
   width: 55% !important;
+  flex-grow: 2;
 }
 .about-info-1 {
   display: block;
@@ -21,6 +22,9 @@ html {
 .navbar-brand img {
   width: 80%;
 }
+.social-row {
+  flex-direction: column;
+}
 .footer-logo {
   width: 90%;
   margin-bottom: 1.5rem;
@@ -31,11 +35,27 @@ html {
 .price-info h2 {
   font-size: 1.4rem;
 }
-.firstCard {
-  grid-column-gap: 1.3rem;
-}
 .footer-icons a {
   padding: 4px 5px;
+}
+.items li a {
+  font-size: 1rem;
+}
+.buttons a {
+  font-size: 1rem;
+}
+.about-container-1 {
+  grid-template-columns: 1fr;
+  grid-row-gap: 3rem;
+}
+.self-image-left {
+  width: 100%;
+}
+.content-right {
+  transform: translate(0px, 0px);
+}
+.content-right h1 {
+  margin-left: 0 !important;
 }
 @media only screen and (max-width: 426px) {
   html {
@@ -82,14 +102,20 @@ html {
   }
   .btn1 {
     padding: 0 !important;
-    margin-bottom: 0.8em;
   }
   .banner h1 {
     font-size: 32px;
     font-weight: 700;
-    line-height: 48px;
+    line-height: 3rem;
     letter-spacing: 0em;
     text-align: left;
+  }
+  .container1 button,
+  .about-info button {
+    padding: 1rem 1.5rem;
+  }
+  .container {
+    max-width: 100% !important;
   }
   .para1 {
     display: block;
@@ -185,7 +211,7 @@ html {
   }
   /* --------------- Social Media --------------- */
   .social1 h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 24px;
     letter-spacing: -0.5px;
@@ -372,11 +398,14 @@ html {
     display: none;
   }
   .forms input[type="email"] {
-    width: 100%;
-    padding-right: 105px;
+    width: 90%;
+    padding-right: 57px;
+    font-size: 1rem;
   }
   .steps input[type="submit"] {
     padding: 11px 20px;
+    font-size: 1rem;
+    transform: translate(18rem, -4rem);
   }
   .footer {
     grid-template-columns: 1fr;
@@ -409,13 +438,20 @@ html {
   .copyright {
     padding: 1rem;
   }
+  .btn2 {
+    width: 38%;
+  }
+  .steps input[type="submit"] {
+    transform: translate(15.4rem, -3.3rem);
+  }
 }
 @media only screen and (max-width: 321px) {
   html {
     font-size: 10px !important;
   }
   .btn2 {
-    width: 35%;
+    width: 40%;
+    padding: 7px 13px !important;
   }
   .whatsapp,
   .telegram {
@@ -450,5 +486,8 @@ html {
   }
   .footer-icons a {
     padding: 0 3px;
+  }
+  .steps input[type="submit"] {
+    transform: translate(18rem, -4rem);
   }
 }

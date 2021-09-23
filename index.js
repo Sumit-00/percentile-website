@@ -34,23 +34,23 @@ counters.forEach((counter) => {
   updateCounter();
 });
 
-const playButton = document.getElementById("play_button");
-// Event listener for the play/pause button
-playButton.addEventListener("click", function () {
-  if (video.paused == true) {
-    // Play the video
-    video.play();
+// const playButton = document.getElementById("play_button");
+// // Event listener for the play/pause button
+// playButton.addEventListener("click", function () {
+//   if (video.paused == true) {
+//     // Play the video
+//     video.play();
 
-    // Update the button text to 'Pause'
-    playButton.innerHTML = "Pause";
-  } else {
-    // Pause the video
-    video.pause();
+//     // Update the button text to 'Pause'
+//     playButton.innerHTML = "Pause";
+//   } else {
+//     // Pause the video
+//     video.pause();
 
-    // Update the button text to 'Play'
-    playButton.innerHTML = "Play";
-  }
-});
+//     // Update the button text to 'Play'
+//     playButton.innerHTML = "Play";
+//   }
+// });
 
 var $carousel = $(".slider");
 
@@ -88,31 +88,18 @@ $carousel.on("afterChange", function () {
 $(".slider").on("afterChange", function (event, slick, currentSlide) {
   const customSlide = document.querySelectorAll(".slick-slideshow__slide");
 
-  console.log(currentSlide);
+  for (let i = 0; i < 4; i++) {
+    document
+      .querySelector(`[data-slick-index = '${i}']`)
+      .getElementsByClassName("card")[0]
+      .children[1].classList.remove("card-active");
+  }
 
-  // for (let i = 0; i < customSlide.length; i++) {
-  //   const ele = document.getElementsByClassName(customSlide[i].classList[0])[0];
-  //   ele.style.backgroundColor = "white";
-  //   ele.style.color = "#034446";
-  // }
-  // let idx;
-  // if (currentSlide == 1) {
-  //   idx = 20;
-  // } else if (currentSlide == 2) {
-  //   idx = 21;
-  // } else if (currentSlide == 3) {
-  //   idx = 22;
-  // } else if (currentSlide == 4) {
-  //   idx = 23;
-  // }
-  // const currCustomSlide = customSlide[currentSlide].classList;
-  // const currentClass = currCustomSlide[0];
-  // const ele1 =
-  //   document.getElementsByClassName(currentClass)[0].children[0].classList[0];
-  // console.log(document.getElementsByClassName(ele1)[idx].children[1]);
-
-  // document.getElementsByClassName(ele1)[idx].children[1].style.backgroundColor =
-  //   "#F1612C";
-  // document.getElementsByClassName(ele1)[idx].children[1].style.color =
-  //   "#F5D77F";
+  // console.log(currentSlide);
+  console.log(
+    document
+      .querySelector(`[data-slick-index = '${currentSlide}']`)
+      .getElementsByClassName("card")[0]
+      .children[1].classList.add("card-active")
+  );
 });

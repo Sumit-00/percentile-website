@@ -1,126 +1,5 @@
-/* html {
-  font-size: 21px;
-}
-.container {
-  width: 75%;
-}
-p {
-  font-size: 1rem;
-}
-.card {
-  width: 100% !important;
-}
-.price-card .card {
-  width: 24% !important;
-}
-.card-title {
-  font-size: 1.5rem !important;
-}
-.price-info p {
-  font-size: 1rem;
-}
-.price-info h2 {
-  font-size: 1.5rem;
-  line-height: 70px;
-}
-.card-body {
-  padding: 1.5rem 1rem;
-}
-.firstCard {
-  grid-template-columns: 1fr 1fr;
-}
-.first img {
-  width: 100%;
-}
-.about-container img {
-  width: 100%;
-}
-.video button {
-  right: 48%;
-}
-.navbar-brand img {
-  width: 138%;
-}
-.banner img {
-  width: 100%;
-}
-.navbar-nav {
-  padding-left: 31rem !important;
-}
-.para2,
-.about-info li {
-  line-height: 3rem;
-}
-.about-container-1 img {
-  width: 34% !important;
-}
-.price-heading button {
-  top: 5rem;
-}
-.about-info-1 {
-  top: 22rem;
-  width: 74%;
-  left: 27rem;
-}
-.about-info-1 .para4 {
-  font-size: 1rem;
-  line-height: 2rem;
-}
-.about-info-1 h1 {
-  font-size: 2.1rem;
-  line-height: 3rem;
-  width: 51%;
-}
-.container1 button,
-.about-info button {
-  padding: 20px 24px;
-}
-.navbar-nav {
-  padding-left: 19rem !important;
-}
-#video {
-  width: 80%;
-}
-.social1 h3 {
-  font-size: 1.6rem;
-}
-.firstCard {
-  margin-top: 6rem;
-  margin-bottom: 9rem;
-  column-gap: 2rem;
-}
-.first h1 {
-  width: 38rem;
-}
-.card-front h5 {
-  text-align: center;
-}
-card-text1 p {
-  font-size: 1rem;
-}
-.about-info-1 .para3 {
-  font-size: 1.1rem;
-  line-height: 2.5rem;
-}
-.about-info-1 {
-  top: 16.4rem;
-  left: 21rem;
-}
-.footer-icons {
-  margin-top: 3rem;
-}
-footer-logo {
-  width: 60%;
-  margin-bottom: 2rem;
-}
-.footer-icons a {
-  padding: 20px 16px;
-}
-.footer-icons a img {
-  width: 6%;
-} */
 html {
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 p,
 button {
@@ -150,6 +29,12 @@ ul li {
 #video {
   width: 70%;
   height: 560px;
+}
+.content-right {
+  transform: translate(-12rem, 16rem);
+}
+.steps input[type="submit"] {
+  transform: translateX(-5.7rem);
 }
 .video button {
   right: 48%;
