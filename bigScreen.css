@@ -31,7 +31,7 @@ ul li {
   height: 560px;
 }
 .content-right {
-  transform: translate(-12rem, 16rem);
+  transform: translate(-15rem, 21rem);
 }
 .steps input[type="submit"] {
   transform: translateX(-5.7rem);
@@ -60,6 +60,15 @@ ul li {
 .about-info-1 {
   top: 18rem;
   left: 23rem;
+}
+.forms{
+  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.steps input[type="email"]{
+  padding: 22px 36px;
 }
 @media only screen and (max-width: 2640px) {
   .about-info-1 {
