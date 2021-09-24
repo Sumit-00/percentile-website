@@ -67,7 +67,7 @@ ul li {
     align-items: center;
     justify-content: center;
 }
-.steps input[type="email"]{
+.steps input[type="email"], .steps input[type="tel"]{
   padding: 22px 36px;
 }
 @media only screen and (max-width: 2640px) {
