@@ -179,6 +179,9 @@ html {
   .video {
     margin-top: 0;
   }
+  .video video {
+    width: 90%;
+  }
   #video {
     max-width: 324px;
     height: 211px;
@@ -394,18 +397,28 @@ html {
   .steps h1 {
     text-align: center;
   }
+  .forms {
+    width: 80%;
+  }
+  .forms form {
+    position: relative;
+    width: 100%;
+  }
   .forms input[type="tel"] {
     display: none;
   }
   .forms input[type="email"] {
-    width: 90%;
+    width: 108%;
     padding-right: 57px;
     font-size: 1rem;
   }
-  .steps input[type="submit"] {
+  .steps .submit-btn {
     padding: 11px 20px;
     font-size: 1rem;
-    transform: translate(18rem, -4rem);
+    position: absolute;
+    top: 4px;
+    right: -6%;
+    transform: translate(0px, 0px);
   }
   .footer {
     grid-template-columns: 1fr;
@@ -440,9 +453,6 @@ html {
   }
   .btn2 {
     width: 38%;
-  }
-  .steps input[type="submit"] {
-    transform: translate(15.4rem, -3.3rem);
   }
 }
 @media only screen and (max-width: 321px) {

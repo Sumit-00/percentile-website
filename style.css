@@ -541,7 +541,7 @@ body {
   padding-right: 10.375rem;
 }
 
-.steps input[type="submit"] {
+.steps .submit-btn {
   color: #7c672c;
   background-color: #f5d77f;
   border: none;
@@ -549,7 +549,7 @@ body {
   transform: translateX(-7.7rem);
   transition: background 400ms linear, color 400ms linear;
 }
-.steps input[type="submit"]:hover {
+.steps .submit-btn:hover {
   border: 0.5px solid #f5d77f;
   background: transparent;
   color: #f5d77f;

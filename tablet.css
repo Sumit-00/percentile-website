@@ -52,7 +52,7 @@ html {
 .about-info-1 .name {
   padding-bottom: 1rem;
 }
-.steps input[type="submit"] {
+.steps .submit-btn {
   transform: translate(55rem, -5rem);
 }
 @media only screen and (max-width: 681px) {
