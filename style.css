@@ -536,17 +536,19 @@ body {
   border: 1px solid #e5e5e5;
 }
 .steps input[type="email"] {
+  width: 27rem
   padding: 14px 27px;
   border: 1px solid #e5e5e5;
-  padding-right: 10.375rem;
 }
 
 .steps .submit-btn {
+  position: absolute;
+  right:5px;
+  top:5px;
   color: #7c672c;
   background-color: #f5d77f;
   border: none;
   padding: 11px 31px;
-  transform: translateX(-7.7rem);
   transition: background 400ms linear, color 400ms linear;
 }
 .steps .submit-btn:hover {
