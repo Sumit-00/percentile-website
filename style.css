@@ -536,7 +536,7 @@ body {
   border: 1px solid #e5e5e5;
 }
 .steps input[type="email"] {
-  width: 27rem
+  width: 27rem;
   padding: 14px 27px;
   border: 1px solid #e5e5e5;
 }
