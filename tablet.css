@@ -41,7 +41,7 @@ html {
   width: 127%;
 }
 .steps input[type="email"] {
-  width:37rem;
+  width: 37rem;
 }
 .about-info-1 .para4 {
   margin-left: 18rem;
@@ -51,6 +51,12 @@ html {
 }
 .about-info-1 .name {
   padding-bottom: 1rem;
+}
+.card__body {
+  font-size: 1.2rem;
+}
+.card__content {
+  padding: 12.3rem 6rem;
 }
 @media only screen and (max-width: 681px) {
   .card-text1 {

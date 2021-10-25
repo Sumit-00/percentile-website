@@ -2,6 +2,10 @@ html {
   font-size: 9px !important;
 }
 
+.card__content {
+  padding: 8.3rem 13rem;
+}
+
 .image1 img {
   width: 120%;
 }
@@ -57,6 +61,7 @@ html {
 .content-right h1 {
   margin-left: 0 !important;
 }
+
 @media only screen and (max-width: 426px) {
   html {
     overflow-x: visible;
@@ -455,6 +460,11 @@ html {
     width: 38%;
   }
 }
+@media only screen and (max-width: 376px) {
+  .card__content {
+    padding: 8.3rem 11rem;
+  }
+}
 @media only screen and (max-width: 321px) {
   html {
     font-size: 10px !important;
@@ -499,5 +509,8 @@ html {
   }
   .steps input[type="submit"] {
     transform: translate(18rem, -4rem);
+  }
+  .card__body {
+    font-size: 11px;
   }
 }

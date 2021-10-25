@@ -5,11 +5,17 @@ p,
 button {
   font-size: 1rem;
 }
+.steps .submit-btn {
+  padding: 0.8rem 2rem;
+}
 .banner button {
   margin-bottom: 2rem;
 }
 .image1 img {
   width: 100%;
+}
+.card__content {
+  padding: 12.3rem 6rem;
 }
 ul li {
   font-size: 1rem;
@@ -61,13 +67,14 @@ ul li {
   top: 18rem;
   left: 23rem;
 }
-.forms{
+.forms {
   width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.steps input[type="email"], .steps input[type="tel"]{
+.steps input[type="email"],
+.steps input[type="tel"] {
   padding: 22px 36px;
 }
 @media only screen and (max-width: 2640px) {
@@ -122,7 +129,7 @@ ul li {
 }
 @media only screen and (max-width: 1879px) {
   html {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .about-info-1 {
     top: 14.5rem;
